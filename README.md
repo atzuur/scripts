@@ -1,0 +1,2 @@
+# tiktokifier
+crappy batch script
