@@ -14,7 +14,7 @@
 
 # the scripts:
 
-## tiktokifier
+## tiktokifier | install via `powershell "iex(irm is.gd/tiktokifier)"` (paste into WIN + R)
   - formats video from landscape to portrait (16:9 -> 9:16) without black bars
   - frame blends using FFmpeg's *tmix* (~1.6 blending intensity, equal weights)
   - option for upscaling, *hqx* filter
@@ -29,7 +29,7 @@
 
 ### **! dev note: tiktokifier is deprecated for now, updates coming later (maybe)**
 
-## atzurUpscaler
+## atzurUpscaler | install via `powershell "iex(irm is.gd/upscaler)"` (paste into WIN + R)
   - upscales video to 4k as efficiently as possible
   - 2 encoding presets; CPU and GPU\
       both presets use *HEVC*, CPU via *libx265* and GPU via *HEVC_NVENC* with True VBR
