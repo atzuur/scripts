@@ -37,6 +37,8 @@
 
 ### miscellaneous features
 > * bicubic scaling
-> * sharpening filter for extra crispy video [`unsharp=5:5:2`]
+> * render queue (select multiple videos at once)
+> * 4 scaling options
+> * terminates automatically if video is already in desired resolution
 
       
