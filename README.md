@@ -1,5 +1,5 @@
 # scripts
-**Batch scripts that use FFmpeg for various video processing related purposes**
+**Batch/Powershell scripts that use FFmpeg for various video processing related purposes**
 > ***!! AMD GPUs currently not supported !!***
 
 # usage
