@@ -41,4 +41,8 @@
 > * 4 scaling options
 > * terminates automatically if video is already in desired resolution
 
-      
+## reenc
+
+- re encodes video using x264
+- supports multiqueue
+- credits to cooler for powershell skills
