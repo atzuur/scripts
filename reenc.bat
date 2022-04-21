@@ -13,7 +13,7 @@ Get-ChildItem $argv | ForEach-Object {
 
     [String]$Out = Join-Path $_.Directory ($_.BaseName + ' - reenc.mp4')
 
-    ffmpeg -i `"$($_.FullName)`" -loglevel warning -stats -c:v libx264 -c:a libopus -preset slow -x264-params aq-mode=3 -crf 18 -b:a 128k -pix_fmt yuv420p10le `"$($out)`"
+    ffmpeg -i `"$($_.FullName)`" -loglevel warning -stats -c:v libx264 -c:a libopus -preset slow -x264-params aq-mode=3 -crf 18 -b:a 128k -pix_fmt yuv420p `"$($out)`"
     if ($LASTEXITCODE -ne 0){pause}
 
     if ($round -ne $argv.count){Clear-Host}
