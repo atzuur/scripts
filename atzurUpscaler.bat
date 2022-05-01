@@ -93,7 +93,7 @@ if ($inHeight -eq $Scale) {
 
 	$in = "$_"
    
-	$Command = 'ffmpeg -i `"$($in)`" -loglevel warning -stats -vf zscale=-2:$($Scale):f=bicubic {0} -c:a libopus -b:a 128k `"$($Out)`"' -f $Enc
+	$Command = 'ffmpeg -i `"$($in)`" -loglevel warning -stats -vf zscale=-2:$($Scale):f=point {0} -c:a libopus -b:a 128k `"$($Out)`"' -f $Enc
 
     $round++ 
 
