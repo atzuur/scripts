@@ -36,7 +36,7 @@
   - in case you're unaware, CPU (software) encoding is slower but more efficient (less filesize for the same quality) than GPU encoding, which is fast but inefficient.
 
 ### miscellaneous features
-> * bicubic scaling
+> * point scaling
 > * render queue (select multiple videos at once)
 > * 4 scaling options
 > * terminates automatically if video is already in desired resolution
