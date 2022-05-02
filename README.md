@@ -12,28 +12,22 @@
 
 **NOTE:** the installation scripts provided will automatically add your requested script to the Send to folder
 
+# prerequisites:
+ - ffmpeg, can be easily installed via
+```powershell
+powershell -noe "iex(irm tl.ctt.cx); Get main/ffmpeg" 
+```
+
 # the scripts:
 
-## tiktokifier
-> install via `powershell "iex(irm is.gd/tiktokifier)"` (paste into WIN + R)
-  - formats video from landscape to portrait (16:9 -> 9:16) without black bars
-  - frame blends using FFmpeg's *tmix* (~1.6 blending intensity, equal weights)
-  - option for upscaling, *hqx* filter
-  - ability to trim video
-
-### miscellaneous features
- > * respond with "hi" to the first question (lol)
- > * frame deduplication via `mpdecimate=2`
- > * efficient *HEVC_NVENC* encoding with True VBR
-
-### **! dev note: tiktokifier is deprecated for now, updates coming later (maybe)**
-
 ## atzurUpscaler
-> install via `powershell "iex(irm is.gd/upscaler)"` (paste into WIN + R)
-  - upscales video to 4k as efficiently as possible
-  - 2 encoding presets; CPU and GPU\
-      both presets use *HEVC*, CPU via *libx265* and GPU via *HEVC_NVENC* with True VBR
-  - in case you're unaware, CPU (software) encoding is slower but more efficient (less filesize for the same quality) than GPU encoding, which is fast but inefficient.
+
+  - upscales video, meant to be used to gain higher bitrate on youtube
+
+**install with:**
+```powershell 
+powershell "(irm https://github.com/atzuur/scripts/raw/main/atzurupscalerbat) | Out-File (Join-Path ([Environment]::GetFolderPath('SendTo')) atzurUpscaler.bat) -Encoding ASCII"
+```
 
 ### miscellaneous features
 > * point scaling
@@ -43,6 +37,17 @@
 
 ## reenc
 
-- re encodes video using x264
+**quick video compressor/converter**
+
+- uses libx264 to efficiently compress video
+- should be able to make any 1080p video <40s embeddable on discord (ie. under 100mb)
 - supports multiqueue
-- credits to cooler for powershell skills
+
+**install with:**
+```powershell 
+powershell "(irm https://github.com/atzuur/scripts/raw/main/reenc.bat) | Out-File (Join-Path ([Environment]::GetFolderPath('SendTo')) reenc.bat) -Encoding ASCII"
+```
+
+## credits
+- ffmpeg installer:
+> * https://github.com/couleur-tweak-tips/TweakList
