@@ -8,7 +8,7 @@
 ### as in; 
 - open *Run* using WIN + R and type in `shell:sendto`
 - this will prompt you with the Send to folder, into which you drag the desired batch script
-- **to use:** right click on your video, hover over "Send to" and select the script that you wish to use
+- **to use:** select your video(s), right click on one of them, hover over "Send to" and select the script that you wish to use
 
 **NOTE:** the installation scripts provided will automatically add your requested script to the Send to folder
 
